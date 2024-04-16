@@ -1,0 +1,99 @@
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+@font-face {
+    font-family: "Raleway Bold";
+    src: url(../font/Raleway/Raleway-Bold.ttf);
+}
+
+
+.container_cv {
+    max-width: 1160px;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    border: solid 2px black;
+    flex-direction: column;
+}
+
+.titre_cv_name {
+    font-family: "Lato", sans-serif;
+    color: white;
+
+}
+
+.sous_titre_cv {
+    font-family: "Lato", sans-serif;
+    font-weight: normal;
+    color: white;
+}
+
+.header {
+    height: 30%;
+    width: 100%;
+}
+
+.main {
+    background-color: rgb(97, 97, 97);
+    height: 60%;
+    display: flex;
+    width: 100%;
+}
+
+.footer {
+    background-color: rgba(120, 34, 33, 1);
+    height: 10%;
+    width: 100%;
+}
+
+.image_container_cv {
+    background-color: rgba(120, 34, 33, 1);
+    height: 80%;
+
+}
+
+.header_info_cv {
+    height: 20%;
+    background-color: rgba(44, 29, 39, 1);
+}
+
+.A_propos_cv {
+    width: 25%;
+    height: 100%;
+    background-color: rgba(120, 34, 33, 1);
+}
+
+.contenu_cv {
+    width: 75%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.container_cv_info_image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.container_img {
+    height: 90px;
+    margin-bottom: 1%;
+    width: 90px;
+}
+
+.container_img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
