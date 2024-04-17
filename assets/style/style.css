@@ -27,7 +27,7 @@
     --taille_footer: var(--result_footer); 
 }
 
-.container_cv {
+body {
     max-width: 1160px;
     height: 100vh;
     display: flex;
@@ -48,19 +48,19 @@
     color: white;
 }
 
-.header {
+header {
     height: var(--taille_img_et_nom_cv);
     width: 100%;
 }
 
-.main {
+main {
     background-color: rgb(97, 97, 97);
     height: var(--taille_main);
     display: flex;
     width: 100%;
 }
 
-.footer {
+footer {
     background-color: rgba(120, 34, 33, 1);
     height: var(--taille_footer);
     width: 100%;
@@ -90,6 +90,8 @@
 .contenu_cv {
     width: 75%;
     height: 100%;
+    overflow-y: auto;
+    padding: 2%;
     background-color: rgb(255, 255, 255);
 }
 
@@ -134,5 +136,126 @@
 
 
 .A_propos_cv {
-    overflow-y: hidden;
+    overflow-y: auto;
+}
+
+.title_a_propos, .paragraphe, .list_ul_cv {
+    width: 90%;
+    font-family: "Lato", sans-serif;
+}
+
+.title_a_propos  {
+    color: black;
+    background-color: rgba(219, 194, 164, 1);
+}
+
+.paragraphe  {
+    color: white;
+    padding: 5% 5%;
+    font-size: 0.8rem;
+    text-align: justify;
+    text-indent: 20%;
+    line-height: 150%;
+}
+
+.list_ul_cv {
+    color: white;
+    padding: 5% 10%;
+    font-size: 0.8rem;
+    line-height: 150%;
+}
+
+.title_a_propos h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 2% 5%;
+}
+
+
+.title_contenu {
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 6%;
+    margin-bottom: 3%;
+    background-color: rgba(219, 194, 164, 1);
+}
+
+.title_contenu h2 {
+    font-size: 0.9rem;
+    margin-left: 1%;
+    font-family: "Lato", sans-serif;
+}
+
+.color_red {
+    position: absolute;
+    background-color: rgba(120, 34, 33, 1);
+    width: 0.6%;
+    height: 100%;
+}
+
+.list_ul_cv_stage {
+    padding: 2%;
+    font-family: "Lato", sans-serif;
+    font-size: 0.9rem;
+
+}
+
+.titre_info_contenu_cv {
+    font-family: "Lato", sans-serif;
+    margin-bottom: 2%;
+}
+
+.paragraphe_info_cv_contenu {
+    font-family: "Lato", sans-serif;
+    font-size: 0.8rem;
+}
+ 
+.titre_marg {
+    margin-top: 3%;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer_ghitub_info a, .footer_ghitub_info small {
+    display: block;
+    color: white;
+
+}
+
+.footer_ghitub_info a {
+    font-size: 1.5rem;
+}
+
+.footer_ghitub_info small {
+    font-size: 0.6rem;
+    font-family: "Lato", sans-serif;
+
+}
+/* scroll bar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #101010;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #555555;
+    border-radius: 1px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(58, 58, 58);
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: rgb(44, 44, 44);
 }
